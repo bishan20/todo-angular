@@ -1,0 +1,28 @@
+<h1>To-do list</h1>
+
+<div class="container">
+  <form (submit)="addTodo()">
+    <div class="form-group">
+      <input
+        type="text"
+        [(ngModel)]="newTodo"
+        class="form-control"
+        placeholder="Enter a new To-do"
+        name="todo-input"
+      />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" [disabled]="newTodo === ''" class="btn btn-primary">
+        To-Do
+      </button>
+    </div>
+  </form>
+  <div class="todo-lists">
+    <ul>
+      <li *ngFor="let todo of todos">
+        {{ todo }}
+      </li>
+    </ul>
+  </div>
+</div>

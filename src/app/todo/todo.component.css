@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+
+div.container {
+  background-color: lightgrey;
+}
+
+div.form-control {
+  width: auto;
+  border: 2px olive;
+  border-radius: 2px;
+}
